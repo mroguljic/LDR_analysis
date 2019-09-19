@@ -19,15 +19,6 @@ def findNominalValues(inputCSV):
   print(firstRow)
   return firstRow
 
-def two_scales(ax1, xData, data1, data2, c1, c2,titleOne,titleTwo,marker='o'):
-    ax2 = ax1.twinx()
-    ax1.plot(xData, data1, color=c1,marker=marker,markersize=5,ls='none')
-    ax1.set_xlabel('Dose[MRad]')
-    ax1.set_ylabel(titleOne)
-    ax2.plot(xData, data2, color=c2,marker=marker,markersize=5,ls='none')
-    ax2.set_ylabel(titleTwo)
-    return ax1, ax2
-
 def getCorrectedRO(inputCSV):
   with open(inputCSV) as csv_file:
     inverterClk =[]
@@ -88,7 +79,7 @@ def getRawRO(inputCSV):
         nor4      = 100*row[10]/nominalRow[10]
 
         clock0.append(clk0)
-        clock4.append(clk0)
+        clock4.append(clk4)
         inverter0.append(inv0)
         inverter4.append(inv4)
         notand0.append(nand0)
@@ -100,71 +91,82 @@ def getRawRO(inputCSV):
 
   return clock0,clock4,inverter0,inverter4,notand0,notand4,notor0,notor4,doses,temperatures
 
-def plotCorrectedRO():
-  c1Data = getCorrectedRO("Chip1.csv") #inverterClk,inverter,nand,nor,doses,temperatures
-  c2Data = getCorrectedRO("Chip2.csv")
-  c3Data = getCorrectedRO("Chip3.csv")
-  c4Data = getCorrectedRO("Chip4.csv")
-  c6Data = getCorrectedRO("Chip6.csv")
+def plotCorrectedRO(driverPosition=0, outputFile='rawPlot.png',windowLength=5,markersize=9):
+  c1Data = getCorrectedRO("Chip1_filtered.csv") #inverterClk,inverter,nand,nor,doses,temperatures
+  c2Data = getCorrectedRO("Chip2_filtered.csv")
+  c3Data = getCorrectedRO("Chip3_filtered.csv")
+  c4Data = getCorrectedRO("Chip4_filtered.csv")
+  c6Data = getCorrectedRO("Chip6_filtered.csv")
 
 
 
-  c1Temp=np.average(c1Data[-1])
-  c2Temp=np.average(c2Data[-1])
-  c3Temp=np.average(c3Data[-1])
-  c4Temp=np.average(c4Data[-1])
-  c6Temp=np.average(c6Data[-1])
+  c1Temp=round(np.average(c1Data[-1]))
+  c2Temp=round(np.average(c2Data[-1]))
+  c3Temp=round(np.average(c3Data[-1]))
+  c4Temp=round(np.average(c4Data[-1]))
+  c6Temp=round(np.average(c6Data[-1]))
 
-
-  #inverterClk = np.convolve(inverterClk, np.ones(windowLength)/windowLength,mode='same')
-  windowLength=5
-  everyNth    =1
-  markersize=9
+  plt.xlabel("Dose[Mrad(SiO2)]",weight='bold',fontsize=12)
+  plt.ylabel("Temperature corrected RO deterioration [%]",weight='bold',fontsize=12)
 
   axes = plt.gca()
   #axes.set_xlim([xmin,xmax])
-  axes.set_ylim([-2,2])
-  axes.set_xlim([0,50])
-  plt.plot(c1Data[4][::everyNth], np.convolve(c1Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], 'x',markersize=markersize, label=c1Temp)
-  plt.plot(c2Data[4][::everyNth], np.convolve(c2Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], 'o',markersize=markersize, label=c2Temp)
-  plt.plot(c3Data[4][::everyNth], np.convolve(c3Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], 'v',markersize=markersize, label=c3Temp)
-  plt.plot(c4Data[4][::everyNth], np.convolve(c4Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], 's',markersize=markersize, label=c4Temp)
-  plt.plot(c6Data[4][::everyNth], np.convolve(c6Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], '*',markersize=markersize, label=c6Temp)
+  #axes.set_ylim([-2,2])
+  #axes.set_xlim([0,50])
+  plt.grid(b=True, which='major', axis='both')
+  plt.plot(c1Data[-2][windowLength:-windowLength:], np.convolve(c1Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'x',markersize=markersize, label=str(c1Temp)+str(' deg C'))
+  plt.plot(c2Data[-2][windowLength:-windowLength:], np.convolve(c2Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'o',markersize=markersize, label=str(c2Temp)+str(' deg C'))
+  plt.plot(c3Data[-2][windowLength:-windowLength:], np.convolve(c3Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'v',markersize=markersize, label=str(c3Temp)+str(' deg C'))
+  #plt.plot(c4Data[-2][windowLength:-windowLength:], np.convolve(c4Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 's',markersize=markersize, label=c4Temp)
+  #plt.plot(c6Data[-2][windowLength:-windowLength:], np.convolve(c6Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], '*',markersize=markersize, label=c6Temp)
   plt.legend(loc='best')
-  plt.show()
+  plt.savefig(outputFile)
+  plt.close()
 
 
-def plotRawRO():
-  rawC1Data = getRawRO("Chip1.csv")
-  rawC2Data = getRawRO("Chip2.csv")
-  rawC3Data = getRawRO("Chip3.csv")
-  rawC4Data = getRawRO("Chip4.csv")
-  rawC6Data = getRawRO("Chip6.csv")
+def plotRawRO(driverPosition=0, outputFile='rawPlot.png',windowLength=5,markersize=9):
+  rawC1Data = getRawRO("Chip1_filtered.csv")
+  rawC2Data = getRawRO("Chip2_filtered.csv")
+  rawC3Data = getRawRO("Chip3_filtered.csv")
+  rawC4Data = getRawRO("Chip4_filtered.csv")
+  rawC6Data = getRawRO("Chip6_filtered.csv")
 
-  c1Temp=np.average(rawC1Data[-1])
-  c2Temp=np.average(rawC2Data[-1])
-  c3Temp=np.average(rawC3Data[-1])
-  c4Temp=np.average(rawC4Data[-1])
-  c6Temp=np.average(rawC6Data[-1])
+  c1Temp=round(np.average(rawC1Data[-1]))
+  c2Temp=round(np.average(rawC2Data[-1]))
+  c3Temp=round(np.average(rawC3Data[-1]))
+  c4Temp=round(np.average(rawC4Data[-1]))
+  c6Temp=round(np.average(rawC6Data[-1]))
 
 
-  #inverterClk = np.convolve(inverterClk, np.ones(windowLength)/windowLength,mode='same')
-  windowLength=5
-  everyNth    =1
   markersize=9
 
   axes = plt.gca()
+  plt.xlabel("Dose[Mrad(SiO2)", weight='bold',fontsize=12)
+  plt.ylabel("Normalized RO frequency",weight='bold',fontsize=12)
   #axes.set_xlim([xmin,xmax])
-  axes.set_ylim([90,110])
- # axes.set_xlim([0,50])
-  plt.plot(rawC1Data[-2][::everyNth], np.convolve(rawC1Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], 'x',markersize=markersize, label=c1Temp)
-  plt.plot(rawC2Data[-2][::everyNth], np.convolve(rawC2Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], 'o',markersize=markersize, label=c2Temp)
-  plt.plot(rawC3Data[-2][::everyNth], np.convolve(rawC3Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], 'v',markersize=markersize, label=c3Temp)
-  plt.plot(rawC4Data[-2][::everyNth], np.convolve(rawC4Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], 's',markersize=markersize, label=c4Temp)
-  plt.plot(rawC6Data[-2][::everyNth], np.convolve(rawC6Data[0],np.ones(windowLength)/windowLength,mode='same')[::everyNth], '*',markersize=markersize, label=c6Temp)
+  #axes.set_ylim([97,105])
+  #axes.set_xlim([0,50])
+  plt.grid(b=True, which='major', axis='both')
+  plt.plot(rawC1Data[-2][windowLength:-windowLength:], np.convolve(rawC1Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'x',markersize=markersize, label=str(c1Temp)+str(' deg C'))
+  plt.plot(rawC2Data[-2][windowLength:-windowLength:], np.convolve(rawC2Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'o',markersize=markersize, label=str(c2Temp)+str(' deg C'))
+  plt.plot(rawC3Data[-2][windowLength:-windowLength:], np.convolve(rawC3Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'v',markersize=markersize, label=str(c3Temp)+str(' deg C'))
+  #plt.plot(rawC4Data[-2][::], np.convolve(rawC4Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[::], 's',markersize=markersize, label=c4Temp)
+  #plt.plot(rawC6Data[-2][::], np.convolve(rawC6Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[::], '*',markersize=markersize, label=c6Temp)
   plt.legend(loc='best')
-  plt.show()
+  plt.savefig(outputFile)
+  plt.close()
 
 
-plotRawRO()
-plotCorrectedRO()
+plotRawRO(0,'clk0.png')
+plotRawRO(1,'clk4.png')
+plotRawRO(2,'inv0.png')
+plotRawRO(3,'inv4.png')
+plotRawRO(4,'not0.png')
+plotRawRO(5,'not4.png')
+plotRawRO(6,'nor0.png')
+plotRawRO(7,'nor4.png')
+
+plotCorrectedRO(0,'clk.png')
+plotCorrectedRO(1,'inv.png')
+plotCorrectedRO(2,'nand.png')
+plotCorrectedRO(3,'nor.png')
