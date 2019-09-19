@@ -1,0 +1,12 @@
+
+Run 2019-06-01 18:31:31.143071
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.44 
+{'SkippedTriggerCnt': 0, 'PIX_PORTAL': 8, 'CONF_FE_DIFF': 1, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_2': 1, 'CML_TAP2_BIAS': 8}
+{'SkippedTriggerCnt': 2050, 'PIX_PORTAL': 3279, 'CONF_FE_DIFF': 3033, 'RING_OSC_1': 4, 'RING_OSC_0': 3, 'RING_OSC_2': 3, 'CML_TAP2_BIAS': 2971}
+
+Run 2019-06-01 18:31:31.820141
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.66 

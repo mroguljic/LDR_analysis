@@ -1,0 +1,26 @@
+
+Run 2019-05-30 03:13:38.620154
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.00 
+{'RING_OSC_0': 1, 'AURORA_CC_CONFIG': 3, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_0': 3, 'AURORA_CC_CONFIG': 680, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 5, 'RING_OSC_6': 3}
+
+Run 2019-05-30 03:13:39.287360
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.15 
+{'RING_OSC_0': 1, 'AURORA_CC_CONFIG': 3, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_0': 3, 'AURORA_CC_CONFIG': 680, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 9, 'RING_OSC_6': 3}
+
+Run 2019-05-30 03:13:39.958318
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.29 
+{'IBIAS_KRUM_SYNC': 0, 'RING_OSC_0': 1, 'AURORA_CC_CONFIG': 3, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'PIX_DEFAULT_CONFIG': 0, 'REGION_ROW': 1}
+{'IBIAS_KRUM_SYNC': 722, 'RING_OSC_0': 11, 'AURORA_CC_CONFIG': 680, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 17, 'RING_OSC_6': 11, 'PIX_DEFAULT_CONFIG': 325, 'REGION_ROW': 3076}
+
+Run 2019-05-30 03:13:40.639614
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.44 

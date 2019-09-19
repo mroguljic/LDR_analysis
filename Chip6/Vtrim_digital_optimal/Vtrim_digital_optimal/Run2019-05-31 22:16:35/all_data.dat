@@ -1,0 +1,19 @@
+
+Run 2019-05-31 22:16:36.050362
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.58 
+{'RING_OSC_0': 1, 'ICTRL_SYNCT_SYNC': 0, 'IBIASP1_SYNC': 0, 'COMP_DIFF': 0}
+{'RING_OSC_0': 3, 'ICTRL_SYNCT_SYNC': 2779, 'IBIASP1_SYNC': 64, 'COMP_DIFF': 2769}
+
+Run 2019-05-31 22:16:36.698056
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.73 
+{'RING_OSC_5': 1, 'PIX_PORTAL': 0, 'IBIASP1_SYNC': 0, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'COMP_DIFF': 0, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'LATENCY_CONFIG': 8, 'ICTRL_SYNCT_SYNC': 0}
+{'RING_OSC_5': 9, 'PIX_PORTAL': 2795, 'IBIASP1_SYNC': 64, 'RING_OSC_0': 3, 'RING_OSC_3': 8, 'COMP_DIFF': 2769, 'RING_OSC_4': 5, 'RING_OSC_7': 9, 'RING_OSC_6': 6, 'LATENCY_CONFIG': 5, 'ICTRL_SYNCT_SYNC': 2779}
+
+Run 2019-05-31 22:16:37.366468
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.80 

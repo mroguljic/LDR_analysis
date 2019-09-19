@@ -1,0 +1,72 @@
+
+Run 2019-07-04 12:04:08.581574
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.03 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 5, 'RING_OSC_0': 3, 'RING_OSC_3': 5, 'RING_OSC_2': 3, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 5, 'RING_OSC_6': 3}
+
+Run 2019-07-04 12:04:09.229065
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.15 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 9, 'RING_OSC_0': 6, 'RING_OSC_3': 9, 'RING_OSC_2': 6, 'RING_OSC_5': 9, 'RING_OSC_4': 6, 'RING_OSC_7': 9, 'RING_OSC_6': 6}
+
+Run 2019-07-04 12:04:09.898740
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.15 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 18, 'RING_OSC_0': 12, 'RING_OSC_3': 18, 'RING_OSC_2': 11, 'RING_OSC_5': 18, 'RING_OSC_4': 11, 'RING_OSC_7': 18, 'RING_OSC_6': 12}
+
+Run 2019-07-04 12:04:10.563231
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.19 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 35, 'RING_OSC_0': 23, 'RING_OSC_3': 35, 'RING_OSC_2': 22, 'RING_OSC_5': 36, 'RING_OSC_4': 22, 'RING_OSC_7': 36, 'RING_OSC_6': 24}
+
+Run 2019-07-04 12:04:11.214379
+pulse width = 4 --> [102.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.26 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 70, 'RING_OSC_0': 45, 'RING_OSC_3': 69, 'RING_OSC_2': 43, 'RING_OSC_5': 72, 'RING_OSC_4': 44, 'RING_OSC_7': 71, 'RING_OSC_6': 47}
+
+Run 2019-07-04 12:04:11.876081
+pulse width = 5 --> [204.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.30 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 140, 'RING_OSC_0': 89, 'RING_OSC_3': 137, 'RING_OSC_2': 85, 'RING_OSC_5': 144, 'RING_OSC_4': 87, 'RING_OSC_7': 142, 'RING_OSC_6': 94}
+
+Run 2019-07-04 12:04:12.538492
+pulse width = 6 --> [409.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.30 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 280, 'RING_OSC_0': 178, 'RING_OSC_3': 274, 'RING_OSC_2': 170, 'RING_OSC_5': 289, 'RING_OSC_4': 174, 'RING_OSC_7': 284, 'RING_OSC_6': 189}
+
+Run 2019-07-04 12:04:13.205545
+pulse width = 7 --> [819.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.30 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 558, 'RING_OSC_0': 355, 'RING_OSC_3': 546, 'RING_OSC_2': 339, 'RING_OSC_5': 576, 'RING_OSC_4': 347, 'RING_OSC_7': 567, 'RING_OSC_6': 376}
+
+Run 2019-07-04 12:04:13.873592
+pulse width = 8 --> [1638.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.42 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 1115, 'RING_OSC_0': 710, 'RING_OSC_3': 1093, 'RING_OSC_2': 677, 'RING_OSC_5': 1152, 'RING_OSC_4': 694, 'RING_OSC_7': 1134, 'RING_OSC_6': 751}
+
+Run 2019-07-04 12:04:14.546654
+pulse width = 9 --> [3276.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+4.42 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 2224, 'RING_OSC_0': 1416, 'RING_OSC_3': 2178, 'RING_OSC_2': 1350, 'RING_OSC_5': 2296, 'RING_OSC_4': 1383, 'RING_OSC_7': 2259, 'RING_OSC_6': 1496}
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 2224, 'RING_OSC_0': 1416, 'RING_OSC_3': 2178, 'RING_OSC_2': 1350, 'RING_OSC_5': 2296, 'RING_OSC_4': 1383, 'RING_OSC_7': 2259, 'RING_OSC_6': 1496}

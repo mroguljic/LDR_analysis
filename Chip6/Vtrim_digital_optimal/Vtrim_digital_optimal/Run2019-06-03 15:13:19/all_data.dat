@@ -1,0 +1,19 @@
+
+Run 2019-06-03 15:13:19.711294
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.01 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_2': 1, 'RING_OSC_7': 1}
+{'RING_OSC_1': 5, 'RING_OSC_0': 3, 'RING_OSC_2': 3, 'RING_OSC_7': 5}
+
+Run 2019-06-03 15:13:20.375596
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.01 
+{'SkippedTriggerCnt': 0, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'SkippedTriggerCnt': 2080, 'RING_OSC_1': 9, 'RING_OSC_0': 3, 'RING_OSC_3': 8, 'RING_OSC_2': 5, 'RING_OSC_5': 9, 'RING_OSC_4': 5, 'RING_OSC_7': 5, 'RING_OSC_6': 6}
+
+Run 2019-06-03 15:13:21.022599
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.08 

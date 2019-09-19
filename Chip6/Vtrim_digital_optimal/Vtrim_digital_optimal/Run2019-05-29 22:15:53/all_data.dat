@@ -1,0 +1,19 @@
+
+Run 2019-05-29 22:15:53.946898
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.88 
+{'RING_OSC_3': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_6': 1}
+{'RING_OSC_3': 4, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_6': 3}
+
+Run 2019-05-29 22:15:54.609976
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.03 
+{'LDAC_LIN': 0, 'RING_OSC_3': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_6': 1}
+{'LDAC_LIN': 1024, 'RING_OSC_3': 4, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_6': 3}
+
+Run 2019-05-29 22:15:55.279967
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.10 

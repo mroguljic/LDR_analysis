@@ -1,0 +1,12 @@
+
+Run 2019-06-01 20:16:25.823649
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.29 
+{'RING_OSC_5': 1, 'RING_OSC_3': 1, 'HITOR_3_MASK_DIFF_0': 2, 'RING_OSC_2': 1, 'RING_OSC_4': 1}
+{'RING_OSC_5': 5, 'RING_OSC_3': 4, 'HITOR_3_MASK_DIFF_0': 946, 'RING_OSC_2': 3, 'RING_OSC_4': 3}
+
+Run 2019-06-01 20:16:26.486662
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.51 

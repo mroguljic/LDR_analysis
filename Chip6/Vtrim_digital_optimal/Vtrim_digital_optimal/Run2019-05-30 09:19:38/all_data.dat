@@ -1,0 +1,12 @@
+
+Run 2019-05-30 09:19:38.956876
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.47 
+{'EN_MACRO_COL_CAL_DIFF_1': 13, 'VTH_SYNC': 0}
+{'EN_MACRO_COL_CAL_DIFF_1': 70, 'VTH_SYNC': 641}
+
+Run 2019-05-30 09:19:39.638110
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.55 

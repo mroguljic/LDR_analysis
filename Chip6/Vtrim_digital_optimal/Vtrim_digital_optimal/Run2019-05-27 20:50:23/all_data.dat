@@ -1,0 +1,26 @@
+
+Run 2019-05-27 20:50:23.857515
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.88 
+{'IBIAS_KRUM_SYNC': 0, 'RING_OSC_6': 1, 'RING_OSC_7': 1, 'RING_OSC_0': 1}
+{'IBIAS_KRUM_SYNC': 731, 'RING_OSC_6': 3, 'RING_OSC_7': 5, 'RING_OSC_0': 3}
+
+Run 2019-05-27 20:50:24.521293
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.95 
+{'IBIAS_KRUM_SYNC': 0, 'RING_OSC_1': 1, 'KRUM_CURR_LIN': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'RING_OSC_0': 1}
+{'IBIAS_KRUM_SYNC': 731, 'RING_OSC_1': 9, 'KRUM_CURR_LIN': 2, 'RING_OSC_3': 8, 'RING_OSC_2': 5, 'RING_OSC_7': 5, 'RING_OSC_6': 3, 'RING_OSC_0': 6}
+
+Run 2019-05-27 20:50:25.182834
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.10 
+{'IBIAS_KRUM_SYNC': 0, 'PIX_PORTAL': 14, 'RING_OSC_1': 1, 'KRUM_CURR_LIN': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'RING_OSC_0': 1}
+{'IBIAS_KRUM_SYNC': 731, 'PIX_PORTAL': 2240, 'RING_OSC_1': 17, 'KRUM_CURR_LIN': 2, 'RING_OSC_3': 8, 'RING_OSC_2': 10, 'RING_OSC_7': 5, 'RING_OSC_6': 3, 'RING_OSC_0': 11}
+
+Run 2019-05-27 20:50:25.842163
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.25 

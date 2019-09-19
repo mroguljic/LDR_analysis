@@ -1,0 +1,12 @@
+
+Run 2019-06-01 09:48:15.844522
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.00 
+{'RING_OSC_3': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'AURORA_INIT_WAIT': 0}
+{'RING_OSC_3': 4, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 4, 'RING_OSC_6': 3, 'AURORA_INIT_WAIT': 1545}
+
+Run 2019-06-01 09:48:16.523658
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.15 

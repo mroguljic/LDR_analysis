@@ -1,0 +1,12 @@
+
+Run 2019-06-03 14:18:45.206744
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.01 
+{'IBIASP1_SYNC': 0, 'RING_OSC_5': 1, 'RING_OSC_7': 1, 'HITOR_3_MASK_LIN_0': 8, 'RING_OSC_6': 1}
+{'IBIASP1_SYNC': 1024, 'RING_OSC_5': 5, 'RING_OSC_7': 4, 'HITOR_3_MASK_LIN_0': 3920, 'RING_OSC_6': 3}
+
+Run 2019-06-03 14:18:45.888470
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.08 

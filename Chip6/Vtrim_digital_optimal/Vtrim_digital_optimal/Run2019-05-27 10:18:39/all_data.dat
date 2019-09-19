@@ -1,0 +1,12 @@
+
+Run 2019-05-27 10:18:39.864149
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.78 
+{'COMP_DIFF': 0, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'VTH1_DIFF': 1, 'RING_OSC_6': 1}
+{'COMP_DIFF': 2779, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'VTH1_DIFF': 127, 'RING_OSC_6': 3}
+
+Run 2019-05-27 10:18:40.519619
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.85 

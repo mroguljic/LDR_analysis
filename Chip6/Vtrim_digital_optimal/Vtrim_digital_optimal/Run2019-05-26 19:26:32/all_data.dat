@@ -1,0 +1,12 @@
+
+Run 2019-05-26 19:26:32.842646
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.32 
+{'RING_OSC_0': 1, 'IBIAS_DISC_SYNC': 0, 'RING_OSC_5': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_0': 3, 'IBIAS_DISC_SYNC': 1360, 'RING_OSC_5': 5, 'RING_OSC_7': 5, 'RING_OSC_6': 3}
+
+Run 2019-05-26 19:26:33.495215
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.47 

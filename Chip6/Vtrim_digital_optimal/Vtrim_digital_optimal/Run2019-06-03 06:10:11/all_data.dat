@@ -1,0 +1,19 @@
+
+Run 2019-06-03 06:10:12.608821
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.15 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_2': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 5, 'RING_OSC_0': 3, 'RING_OSC_2': 3, 'RING_OSC_7': 5, 'RING_OSC_6': 3}
+
+Run 2019-06-03 06:10:13.277130
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.15 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_2': 1, 'CDR_CP_IBIAS': 0, 'RING_OSC_6': 1, 'RING_OSC_7': 1}
+{'RING_OSC_1': 5, 'RING_OSC_0': 6, 'RING_OSC_2': 3, 'CDR_CP_IBIAS': 513, 'RING_OSC_6': 3, 'RING_OSC_7': 5}
+
+Run 2019-06-03 06:10:13.937403
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.29 

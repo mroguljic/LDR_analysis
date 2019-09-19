@@ -1,0 +1,19 @@
+
+Run 2019-05-29 00:34:09.683901
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.40 
+{'GP_LVDS_ROUTE': 1, 'FOL_DIFF': 0, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'REGION_COL': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'CDR_VCO_BUFF_BIAS': 0}
+{'GP_LVDS_ROUTE': 2198, 'FOL_DIFF': 2906, 'RING_OSC_1': 5, 'RING_OSC_0': 3, 'REGION_COL': 1344, 'RING_OSC_7': 5, 'RING_OSC_6': 3, 'CDR_VCO_BUFF_BIAS': 2753}
+
+Run 2019-05-29 00:34:10.501706
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.55 
+{'GP_LVDS_ROUTE': 1, 'FOL_DIFF': 0, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_5': 1, 'REGION_COL': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'CDR_VCO_BUFF_BIAS': 0, 'RING_OSC_4': 1}
+{'GP_LVDS_ROUTE': 2198, 'FOL_DIFF': 2906, 'RING_OSC_1': 5, 'RING_OSC_0': 3, 'RING_OSC_5': 9, 'REGION_COL': 1344, 'RING_OSC_7': 9, 'RING_OSC_6': 6, 'CDR_VCO_BUFF_BIAS': 2753, 'RING_OSC_4': 5}
+
+Run 2019-05-29 00:34:11.188646
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.55 

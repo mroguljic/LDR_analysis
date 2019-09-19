@@ -1,0 +1,40 @@
+
+Run 2019-05-28 01:01:09.335717
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.95 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_2': 1}
+{'RING_OSC_1': 4, 'RING_OSC_0': 3, 'RING_OSC_2': 3}
+
+Run 2019-05-28 01:01:09.981469
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.10 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'HitOr_0_Cnt': 0, 'RING_OSC_6': 1, 'RING_OSC_7': 1, 'HITOR_3_MASK_LIN_0': 14}
+{'RING_OSC_1': 4, 'RING_OSC_0': 3, 'RING_OSC_2': 3, 'RING_OSC_5': 9, 'HitOr_0_Cnt': 2064, 'RING_OSC_6': 6, 'RING_OSC_7': 9, 'HITOR_3_MASK_LIN_0': 833}
+
+Run 2019-05-28 01:01:10.645852
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.18 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'HitOr_0_Cnt': 0, 'RING_OSC_6': 1, 'RING_OSC_7': 1, 'HITOR_3_MASK_LIN_0': 14}
+{'RING_OSC_1': 4, 'RING_OSC_0': 11, 'RING_OSC_2': 3, 'RING_OSC_5': 9, 'HitOr_0_Cnt': 2064, 'RING_OSC_6': 11, 'RING_OSC_7': 17, 'HITOR_3_MASK_LIN_0': 833}
+
+Run 2019-05-28 01:01:11.311996
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.18 
+{'HITOR_1_MASK_LIN_1': 1, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'HitOr_0_Cnt': 0, 'RING_OSC_6': 1, 'RING_OSC_7': 1, 'HITOR_2_MASK_SYNC': 0, 'HITOR_3_MASK_LIN_0': 14}
+{'HITOR_1_MASK_LIN_1': 1154, 'RING_OSC_1': 33, 'RING_OSC_0': 21, 'RING_OSC_3': 32, 'RING_OSC_2': 20, 'RING_OSC_5': 9, 'RING_OSC_4': 20, 'HitOr_0_Cnt': 2064, 'RING_OSC_6': 11, 'RING_OSC_7': 17, 'HITOR_2_MASK_SYNC': 267, 'HITOR_3_MASK_LIN_0': 833}
+
+Run 2019-05-28 01:01:11.998612
+pulse width = 4 --> [102.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.32 
+{'HITOR_1_MASK_LIN_1': 1, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'HitOr_0_Cnt': 0, 'RING_OSC_6': 1, 'RING_OSC_7': 1, 'HITOR_2_MASK_SYNC': 0, 'HITOR_3_MASK_LIN_0': 14}
+{'HITOR_1_MASK_LIN_1': 1154, 'RING_OSC_1': 33, 'RING_OSC_0': 21, 'RING_OSC_3': 64, 'RING_OSC_2': 20, 'RING_OSC_5': 9, 'RING_OSC_4': 39, 'HitOr_0_Cnt': 2064, 'RING_OSC_6': 11, 'RING_OSC_7': 17, 'HITOR_2_MASK_SYNC': 267, 'HITOR_3_MASK_LIN_0': 833}
+
+Run 2019-05-28 01:01:12.683612
+pulse width = 5 --> [204.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.47 

@@ -1,0 +1,40 @@
+
+Run 2019-06-01 00:19:59.785427
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.29 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 4, 'RING_OSC_0': 3, 'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_6': 3}
+
+Run 2019-06-01 00:20:00.475620
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.44 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 9, 'RING_OSC_0': 6, 'RING_OSC_3': 4, 'RING_OSC_2': 5, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_6': 3}
+
+Run 2019-06-01 00:20:01.137783
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.51 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_1': 9, 'RING_OSC_0': 6, 'RING_OSC_3': 4, 'RING_OSC_2': 5, 'RING_OSC_5': 17, 'RING_OSC_4': 3, 'RING_OSC_7': 17, 'RING_OSC_6': 11}
+
+Run 2019-06-01 00:20:01.804030
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.66 
+{'IBIAS_KRUM_SYNC': 0, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'ICTRL_SYNCT_SYNC': 0}
+{'IBIAS_KRUM_SYNC': 2779, 'RING_OSC_1': 9, 'RING_OSC_0': 21, 'RING_OSC_3': 4, 'RING_OSC_2': 5, 'RING_OSC_5': 17, 'RING_OSC_4': 3, 'RING_OSC_7': 33, 'RING_OSC_6': 22, 'ICTRL_SYNCT_SYNC': 2208}
+
+Run 2019-06-01 00:20:02.471801
+pulse width = 4 --> [102.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.66 
+{'IBIAS_KRUM_SYNC': 0, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'AI_REGION_COL': 0, 'ICTRL_SYNCT_SYNC': 0}
+{'IBIAS_KRUM_SYNC': 2779, 'RING_OSC_1': 65, 'RING_OSC_0': 41, 'RING_OSC_3': 64, 'RING_OSC_2': 39, 'RING_OSC_5': 17, 'RING_OSC_4': 3, 'RING_OSC_7': 33, 'RING_OSC_6': 22, 'AI_REGION_COL': 2778, 'ICTRL_SYNCT_SYNC': 2208}
+
+Run 2019-06-01 00:20:03.141799
+pulse width = 5 --> [204.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.73 

@@ -1,0 +1,12 @@
+
+Run 2019-06-04 01:58:42.972453
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.80 
+{'IBIAS_DISC_SYNC': 0, 'COMP_LIN': 0, 'RING_OSC_3': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'IBIASP2_SYNC': 0, 'RING_OSC_6': 1, 'CML_TAP2_BIAS': 0, 'RING_OSC_7': 1, 'AURORA_INIT_WAIT': 4}
+{'IBIAS_DISC_SYNC': 2715, 'COMP_LIN': 33, 'RING_OSC_3': 4, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'IBIASP2_SYNC': 2650, 'RING_OSC_6': 3, 'CML_TAP2_BIAS': 521, 'RING_OSC_7': 5, 'AURORA_INIT_WAIT': 2779}
+
+Run 2019-06-04 01:58:43.652682
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.88 

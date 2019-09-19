@@ -1,0 +1,12 @@
+
+Run 2019-06-01 13:19:58.261989
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.22 
+{'PIX_DEFAULT_CONFIG': 0, 'RING_OSC_6': 1, 'RING_OSC_7': 1, 'CML_CONFIG': 8}
+{'PIX_DEFAULT_CONFIG': 4, 'RING_OSC_6': 3, 'RING_OSC_7': 4, 'CML_CONFIG': 464}
+
+Run 2019-06-01 13:19:58.942217
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.37 

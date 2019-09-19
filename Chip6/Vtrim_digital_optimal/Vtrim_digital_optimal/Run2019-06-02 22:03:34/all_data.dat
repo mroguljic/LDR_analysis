@@ -1,0 +1,12 @@
+
+Run 2019-06-02 22:03:35.008164
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.51 
+{'COMP_LIN': 1}
+{'COMP_LIN': 2258}
+
+Run 2019-06-02 22:03:35.692561
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.66 

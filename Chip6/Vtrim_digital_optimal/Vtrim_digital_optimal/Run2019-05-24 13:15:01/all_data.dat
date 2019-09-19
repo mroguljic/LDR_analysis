@@ -1,0 +1,12 @@
+
+Run 2019-05-24 13:15:02.361622
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.78 
+{'IBIASP1_SYNC': 0, 'REGION_COL': 8, 'SER_SEL_OUT': 10}
+{'IBIASP1_SYNC': 2304, 'REGION_COL': 2152, 'SER_SEL_OUT': 3034}
+
+Run 2019-05-24 13:15:03.019274
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.78 

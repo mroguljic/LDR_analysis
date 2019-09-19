@@ -1,0 +1,12 @@
+
+Run 2019-05-27 21:53:21.456058
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.10 
+{'PIX_DEFAULT_CONFIG': 0, 'AURORA_CC_CONFIG': 0, 'RING_OSC_5': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'PIX_DEFAULT_CONFIG': 1283, 'AURORA_CC_CONFIG': 3793, 'RING_OSC_5': 5, 'RING_OSC_7': 5, 'RING_OSC_6': 3}
+
+Run 2019-05-27 21:53:22.122889
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.18 

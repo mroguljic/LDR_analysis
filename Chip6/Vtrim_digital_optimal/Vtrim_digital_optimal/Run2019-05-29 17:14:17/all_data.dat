@@ -1,0 +1,19 @@
+
+Run 2019-05-29 17:14:18.228988
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.47 
+{'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_4': 1, 'EN_MACRO_COL_CAL_SYNC_3': 0}
+{'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_4': 3, 'EN_MACRO_COL_CAL_SYNC_3': 1556}
+
+Run 2019-05-29 17:14:18.940121
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.55 
+{'EN_CORE_COL_LIN_2': 1, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_4': 1, 'CDR_VCO_BUFF_BIAS': 0, 'ICTRL_SYNCT_SYNC': 4, 'EN_MACRO_COL_CAL_SYNC_3': 0}
+{'EN_CORE_COL_LIN_2': 3706, 'RING_OSC_1': 9, 'RING_OSC_0': 6, 'RING_OSC_3': 4, 'RING_OSC_2': 5, 'RING_OSC_4': 3, 'CDR_VCO_BUFF_BIAS': 2775, 'ICTRL_SYNCT_SYNC': 2651, 'EN_MACRO_COL_CAL_SYNC_3': 1556}
+
+Run 2019-05-29 17:14:19.634485
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.70 

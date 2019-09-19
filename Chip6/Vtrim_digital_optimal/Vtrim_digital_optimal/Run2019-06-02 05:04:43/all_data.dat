@@ -1,0 +1,26 @@
+
+Run 2019-06-02 05:04:43.618030
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.00 
+{'RING_OSC_0': 1, 'HITOR_2_MASK_LIN_0': 0, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_0': 3, 'HITOR_2_MASK_LIN_0': 2768, 'RING_OSC_7': 4, 'RING_OSC_6': 3}
+
+Run 2019-06-02 05:04:44.284605
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.15 
+{'RING_OSC_0': 1, 'IBIAS_KRUM_SYNC': 0, 'HITOR_2_MASK_LIN_0': 0, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_0': 6, 'IBIAS_KRUM_SYNC': 197, 'HITOR_2_MASK_LIN_0': 2768, 'RING_OSC_7': 4, 'RING_OSC_6': 3}
+
+Run 2019-06-02 05:04:44.936701
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.29 
+{'IBIAS_KRUM_SYNC': 0, 'EN_CORE_COL_LIN_1': 0, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'HITOR_2_MASK_LIN_0': 0}
+{'IBIAS_KRUM_SYNC': 197, 'EN_CORE_COL_LIN_1': 3876, 'RING_OSC_1': 17, 'RING_OSC_0': 6, 'RING_OSC_3': 16, 'RING_OSC_2': 10, 'RING_OSC_5': 17, 'RING_OSC_4': 10, 'RING_OSC_7': 4, 'RING_OSC_6': 11, 'HITOR_2_MASK_LIN_0': 2768}
+
+Run 2019-06-02 05:04:45.614420
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.44 

@@ -1,0 +1,12 @@
+
+Run 2019-05-28 22:27:39.021100
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.01 
+{'IBIASP1_SYNC': 0, 'RING_OSC_7': 1}
+{'IBIASP1_SYNC': 0, 'RING_OSC_7': 5}
+
+Run 2019-05-28 22:27:39.717917
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.01 

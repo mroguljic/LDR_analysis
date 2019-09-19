@@ -1,0 +1,12 @@
+
+Run 2019-05-30 22:14:39.204021
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.51 
+{'CDR_CONFIG': 0, 'RING_OSC_0': 1, 'RING_OSC_1': 1, 'RING_OSC_2': 1, 'RING_OSC_3': 1}
+{'CDR_CONFIG': 3282, 'RING_OSC_0': 3, 'RING_OSC_1': 4, 'RING_OSC_2': 3, 'RING_OSC_3': 4}
+
+Run 2019-05-30 22:14:39.865635
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.66 

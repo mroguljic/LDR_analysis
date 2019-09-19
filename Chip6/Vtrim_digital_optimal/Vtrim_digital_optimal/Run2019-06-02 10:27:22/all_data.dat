@@ -1,0 +1,12 @@
+
+Run 2019-06-02 10:27:23.511296
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.37 
+{'RING_OSC_1': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 2, 'REGION_ROW': 0, 'REF_KRUM_LIN': 0}
+{'RING_OSC_1': 5, 'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 35, 'REGION_ROW': 2258, 'REF_KRUM_LIN': 768}
+
+Run 2019-06-02 10:27:24.193739
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.51 

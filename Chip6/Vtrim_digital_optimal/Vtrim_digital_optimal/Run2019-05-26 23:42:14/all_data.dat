@@ -1,0 +1,26 @@
+
+Run 2019-05-26 23:42:15.644756
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.95 
+{'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'CDR_CONFIG': 4, 'PIX_DEFAULT_CONFIG': 0}
+{'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 4, 'RING_OSC_6': 3, 'CDR_CONFIG': 520, 'PIX_DEFAULT_CONFIG': 0}
+
+Run 2019-05-26 23:42:16.308144
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.10 
+{'RING_OSC_0': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'CDR_CONFIG': 4, 'PIX_DEFAULT_CONFIG': 0}
+{'RING_OSC_0': 6, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 4, 'RING_OSC_6': 3, 'CDR_CONFIG': 520, 'PIX_DEFAULT_CONFIG': 0}
+
+Run 2019-05-26 23:42:16.953432
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.32 
+{'RING_OSC_0': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1, 'CDR_CONFIG': 4, 'COMP_LIN': 4, 'PIX_DEFAULT_CONFIG': 0}
+{'RING_OSC_0': 6, 'RING_OSC_5': 17, 'RING_OSC_4': 3, 'RING_OSC_7': 17, 'RING_OSC_6': 11, 'CDR_CONFIG': 520, 'COMP_LIN': 3166, 'PIX_DEFAULT_CONFIG': 0}
+
+Run 2019-05-26 23:42:17.632503
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.40 

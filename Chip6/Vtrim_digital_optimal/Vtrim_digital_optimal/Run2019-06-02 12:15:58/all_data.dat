@@ -1,0 +1,12 @@
+
+Run 2019-06-02 12:15:59.077969
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.58 
+{'HitOr_2_Cnt': 0}
+{'HitOr_2_Cnt': 1168}
+
+Run 2019-06-02 12:15:59.752936
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.66 

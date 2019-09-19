@@ -1,0 +1,12 @@
+
+Run 2019-05-23 16:18:41.859532
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.01 
+{'RING_OSC_7': 1, 'HITOR_3_MASK_LIN_0': 5}
+{'RING_OSC_7': 4, 'HITOR_3_MASK_LIN_0': 3803}
+
+Run 2019-05-23 16:18:42.525283
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+31.08 

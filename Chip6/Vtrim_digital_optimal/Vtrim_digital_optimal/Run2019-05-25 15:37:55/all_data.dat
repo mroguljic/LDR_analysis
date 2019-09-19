@@ -1,0 +1,12 @@
+
+Run 2019-05-25 15:37:55.791385
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.88 
+{'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'MonitoringDataADC': 0, 'RING_OSC_4': 1, 'PIX_DEFAULT_CONFIG': 0}
+{'RING_OSC_1': 5, 'RING_OSC_0': 3, 'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_5': 5, 'MonitoringDataADC': 2697, 'RING_OSC_4': 3, 'PIX_DEFAULT_CONFIG': 0}
+
+Run 2019-05-25 15:37:56.452191
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.03 

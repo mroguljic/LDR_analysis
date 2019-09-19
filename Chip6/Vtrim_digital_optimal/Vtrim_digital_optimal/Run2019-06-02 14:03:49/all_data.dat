@@ -1,0 +1,12 @@
+
+Run 2019-06-02 14:03:49.915158
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.51 
+{'KRUM_CURR_LIN': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'CDR_CONFIG': 1}
+{'KRUM_CURR_LIN': 3021, 'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'CDR_CONFIG': 2262}
+
+Run 2019-06-02 14:03:50.592866
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+29.58 

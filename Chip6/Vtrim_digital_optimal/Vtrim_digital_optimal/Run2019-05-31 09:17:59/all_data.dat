@@ -1,0 +1,26 @@
+
+Run 2019-05-31 09:17:59.797826
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.03 
+{'IBIAS_SF_SYNC': 0, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'IBIAS_SF_SYNC': 0, 'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 4, 'RING_OSC_6': 3}
+
+Run 2019-05-31 09:18:00.448320
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.10 
+{'IBIAS_SF_SYNC': 0, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'IBIAS_SF_SYNC': 0, 'RING_OSC_1': 9, 'RING_OSC_0': 6, 'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 4, 'RING_OSC_6': 3}
+
+Run 2019-05-31 09:18:01.114245
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.25 
+{'IBIAS_SF_SYNC': 0, 'COMP_DIFF': 4, 'RING_OSC_1': 1, 'RING_OSC_0': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'IBIAS_SF_SYNC': 0, 'COMP_DIFF': 7, 'RING_OSC_1': 9, 'RING_OSC_0': 6, 'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_5': 17, 'RING_OSC_4': 3, 'RING_OSC_7': 17, 'RING_OSC_6': 11}
+
+Run 2019-05-31 09:18:01.775463
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.32 

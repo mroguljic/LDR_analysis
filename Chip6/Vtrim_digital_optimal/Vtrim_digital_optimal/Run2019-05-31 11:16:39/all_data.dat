@@ -1,0 +1,12 @@
+
+Run 2019-05-31 11:16:40.578918
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.25 
+{'CDR_VCO_IBIAS': 0, 'IBIASP1_SYNC': 4}
+{'CDR_VCO_IBIAS': 9, 'IBIASP1_SYNC': 218}
+
+Run 2019-05-31 11:16:41.241448
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.32 

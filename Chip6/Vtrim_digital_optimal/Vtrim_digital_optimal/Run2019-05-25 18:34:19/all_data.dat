@@ -1,0 +1,12 @@
+
+Run 2019-05-25 18:34:20.587309
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.25 
+{'RING_OSC_0': 1, 'RING_OSC_7': 1, 'RING_OSC_6': 1}
+{'RING_OSC_0': 3, 'RING_OSC_7': 4, 'RING_OSC_6': 3}
+
+Run 2019-05-25 18:34:21.258778
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.40 

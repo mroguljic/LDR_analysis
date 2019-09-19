@@ -1,0 +1,33 @@
+
+Run 2019-05-27 11:23:34.789326
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.32 
+{'RING_OSC_1': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'REGION_ROW': 0, 'RING_OSC_6': 1}
+{'RING_OSC_1': 5, 'RING_OSC_3': 4, 'RING_OSC_2': 3, 'RING_OSC_5': 5, 'RING_OSC_4': 3, 'RING_OSC_7': 5, 'REGION_ROW': 2778, 'RING_OSC_6': 3}
+
+Run 2019-05-27 11:23:35.480425
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.40 
+{'HITOR_1_MASK_LIN_0': 2, 'RING_OSC_1': 1, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'REGION_ROW': 0, 'RING_OSC_6': 1}
+{'HITOR_1_MASK_LIN_0': 74, 'RING_OSC_1': 9, 'RING_OSC_3': 8, 'RING_OSC_2': 5, 'RING_OSC_5': 5, 'RING_OSC_4': 5, 'RING_OSC_7': 5, 'REGION_ROW': 2778, 'RING_OSC_6': 3}
+
+Run 2019-05-27 11:23:36.129031
+pulse width = 2 --> [25.6] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.47 
+{'HITOR_1_MASK_LIN_0': 2, 'RING_OSC_1': 1, 'LCC_DIFF': 8, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'REGION_ROW': 0, 'RING_OSC_0': 1, 'RING_OSC_6': 1}
+{'HITOR_1_MASK_LIN_0': 74, 'RING_OSC_1': 17, 'LCC_DIFF': 2649, 'RING_OSC_3': 16, 'RING_OSC_2': 10, 'RING_OSC_5': 17, 'RING_OSC_4': 10, 'RING_OSC_7': 17, 'REGION_ROW': 2778, 'RING_OSC_0': 11, 'RING_OSC_6': 11}
+
+Run 2019-05-27 11:23:36.776175
+pulse width = 3 --> [51.2] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.55 
+{'PIX_PORTAL': 10, 'HITOR_1_MASK_LIN_0': 2, 'RING_OSC_1': 1, 'LCC_DIFF': 8, 'RING_OSC_3': 1, 'RING_OSC_2': 1, 'RING_OSC_5': 1, 'RING_OSC_4': 1, 'RING_OSC_7': 1, 'REGION_ROW': 0, 'HITOR_2_MASK_SYNC': 0, 'RING_OSC_0': 1, 'RING_OSC_6': 1}
+{'PIX_PORTAL': 2778, 'HITOR_1_MASK_LIN_0': 74, 'RING_OSC_1': 17, 'LCC_DIFF': 2649, 'RING_OSC_3': 16, 'RING_OSC_2': 10, 'RING_OSC_5': 17, 'RING_OSC_4': 10, 'RING_OSC_7': 17, 'REGION_ROW': 2778, 'HITOR_2_MASK_SYNC': 2768, 'RING_OSC_0': 21, 'RING_OSC_6': 11}
+
+Run 2019-05-27 11:23:37.431632
+pulse width = 4 --> [102.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.63 

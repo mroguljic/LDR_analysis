@@ -1,0 +1,12 @@
+
+Run 2019-05-24 04:44:15.309323
+pulse width = 0 --> [6.4] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.18 
+{'MonitoringDataADC': 10}
+{'MonitoringDataADC': 3551}
+
+Run 2019-05-24 04:44:15.973162
+pulse width = 1 --> [12.8] ns
+ T_NTC(C) 	GlobalTime(s)  DoseRange(Mrad)
+30.32 
