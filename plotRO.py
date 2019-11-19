@@ -30,6 +30,7 @@ def two_scales(ax1, xData, data1, data2, c1, c2,titleOne,titleTwo,marker='o'):
 
 
 def plot(inputCSV,title="Title",ylow=-0.5,yup=1.5,windowLength=1):
+  normalization = 1.
   with open(inputCSV) as csv_file:
     inverterClk =[]
     inverter    =[]
@@ -43,14 +44,14 @@ def plot(inputCSV,title="Title",ylow=-0.5,yup=1.5,windowLength=1):
         timestamp = row[0]
         temp      = row[1]
         dose      = row[2]
-        clk0      = 100*row[3]/nominalRow[3]
-        clk4      = 100*row[4]/nominalRow[4]
-        inv0      = 100*row[5]/nominalRow[5]
-        inv4      = 100*row[6]/nominalRow[6]
-        nand0     = 100*row[7]/nominalRow[7]
-        nand4     = 100*row[8]/nominalRow[8]
-        nor0      = 100*row[9]/nominalRow[9]
-        nor4      = 100*row[10]/nominalRow[10]
+        clk0      = normalization*row[3]/nominalRow[3]
+        clk4      = normalization*row[4]/nominalRow[4]
+        inv0      = normalization*row[5]/nominalRow[5]
+        inv4      = normalization*row[6]/nominalRow[6]
+        nand0     = normalization*row[7]/nominalRow[7]
+        nand4     = normalization*row[8]/nominalRow[8]
+        nor0      = normalization*row[9]/nominalRow[9]
+        nor4      = normalization*row[10]/nominalRow[10]
 
         inverterClk.append(clk0 - clk4)
         inverter.append(inv0 - inv4)

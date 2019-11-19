@@ -3,6 +3,7 @@ import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.ticker as ticker
 
 def findNominalValues(inputCSV):
   firstTimestamp = 99999999999999
@@ -20,6 +21,7 @@ def findNominalValues(inputCSV):
   return firstRow
 
 def getCorrectedRO(inputCSV):
+  normalization = 1.
   with open(inputCSV) as csv_file:
     inverterClk =[]
     inverter    =[]
@@ -33,14 +35,14 @@ def getCorrectedRO(inputCSV):
         timestamp = row[0]
         temp      = row[1]
         dose      = row[2]
-        clk0      = 100*row[3]/nominalRow[3]
-        clk4      = 100*row[4]/nominalRow[4]
-        inv0      = 100*row[5]/nominalRow[5]
-        inv4      = 100*row[6]/nominalRow[6]
-        nand0     = 100*row[7]/nominalRow[7]
-        nand4     = 100*row[8]/nominalRow[8]
-        nor0      = 100*row[9]/nominalRow[9]
-        nor4      = 100*row[10]/nominalRow[10]
+        clk0      = normalization*row[3]/nominalRow[3]
+        clk4      = normalization*row[4]/nominalRow[4]
+        inv0      = normalization*row[5]/nominalRow[5]
+        inv4      = normalization*row[6]/nominalRow[6]
+        nand0     = normalization*row[7]/nominalRow[7]
+        nand4     = normalization*row[8]/nominalRow[8]
+        nor0      = normalization*row[9]/nominalRow[9]
+        nor4      = normalization*row[10]/nominalRow[10]
 
         inverterClk.append(clk0 - clk4)
         inverter.append(inv0 - inv4)
@@ -52,6 +54,7 @@ def getCorrectedRO(inputCSV):
   return inverterClk,inverter,nand,nor,doses,temperatures
 
 def getRawRO(inputCSV):
+  normalization = 1.
   with open(inputCSV) as csv_file:
     inverter0   =[]
     inverter4   =[]
@@ -69,14 +72,14 @@ def getRawRO(inputCSV):
         timestamp = row[0]
         temp      = row[1]
         dose      = row[2]
-        clk0      = 100*row[3]/nominalRow[3]
-        clk4      = 100*row[4]/nominalRow[4]
-        inv0      = 100*row[5]/nominalRow[5]
-        inv4      = 100*row[6]/nominalRow[6]
-        nand0     = 100*row[7]/nominalRow[7]
-        nand4     = 100*row[8]/nominalRow[8]
-        nor0      = 100*row[9]/nominalRow[9]
-        nor4      = 100*row[10]/nominalRow[10]
+        clk0      = normalization*row[3]/nominalRow[3]
+        clk4      = normalization*row[4]/nominalRow[4]
+        inv0      = normalization*row[5]/nominalRow[5]
+        inv4      = normalization*row[6]/nominalRow[6]
+        nand0     = normalization*row[7]/nominalRow[7]
+        nand4     = normalization*row[8]/nominalRow[8]
+        nor0      = normalization*row[9]/nominalRow[9]
+        nor4      = normalization*row[10]/nominalRow[10]
 
         clock0.append(clk0)
         clock4.append(clk4)
@@ -90,6 +93,47 @@ def getRawRO(inputCSV):
         doses.append(dose)
 
   return clock0,clock4,inverter0,inverter4,notand0,notand4,notor0,notor4,doses,temperatures
+
+def getTempAndTime(inputCSV):
+  with open(inputCSV) as csv_file:
+    timestamps  =[]
+    temperatures=[]
+    nominalRow  = findNominalValues(inputCSV)
+    csv_reader  = csv.reader(csv_file, delimiter=',',quoting=csv.QUOTE_NONNUMERIC)
+    for row in csv_reader:
+        timestamp = datetime.fromtimestamp(row[0])
+        temp      = row[1]
+
+
+        temperatures.append(temp)
+        timestamps.append(timestamp)
+
+  return timestamps,temperatures
+
+def plotTempAndTime():
+  C1Data = getTempAndTime("Chip1.csv")
+  C2Data = getTempAndTime("Chip2.csv")
+  C3Data = getTempAndTime("Chip3.csv")
+  C4Data = getTempAndTime("Chip4.csv")
+  C6Data = getTempAndTime("Chip6.csv")
+
+  plt.plot(C1Data[0],C1Data[1],'o',label='Chip 1')
+  plt.plot(C2Data[0],C2Data[1],'x',label='Chip 2')
+  plt.plot(C3Data[0],C3Data[1],'v',label='Chip 3')
+  plt.plot(C4Data[0],C4Data[1],'s',label='Chip 4')
+  plt.plot(C6Data[0],C6Data[1],'D',label='Chip 6')
+  plt.xlabel("Date", weight='bold',fontsize=20)
+  plt.ylabel("Temperature [$^\circ$C]",weight='bold',fontsize=20)
+  plt.gcf().autofmt_xdate()
+  ax=plt.gca()
+  ax.xaxis.set_major_locator(ticker.MultipleLocator(7))
+  ax.tick_params(axis="x", labelsize=12)
+  ax.tick_params(axis="y", labelsize=15)
+  plt.legend(loc='upper right',fontsize='16',markerscale=2.0,framealpha=1.0)
+  plt.show()
+
+
+
 
 def plotCorrectedRO(driverPosition=0, outputFile='rawPlot.png',windowLength=5,markersize=9):
   c1Data = getCorrectedRO("Chip1_filtered.csv") #inverterClk,inverter,nand,nor,doses,temperatures
@@ -107,20 +151,20 @@ def plotCorrectedRO(driverPosition=0, outputFile='rawPlot.png',windowLength=5,ma
   c6Temp=round(np.average(c6Data[-1]))
 
   plt.xlabel("Dose[Mrad(SiO2)]",weight='bold',fontsize=12)
-  plt.ylabel("Temperature corrected RO deterioration [%]",weight='bold',fontsize=12)
+  plt.ylabel("RO pair difference change in relative frequency",weight='bold',fontsize=12)
 
   axes = plt.gca()
   #axes.set_xlim([xmin,xmax])
-  #axes.set_ylim([-2,2])
-  #axes.set_xlim([0,50])
+  #axes.set_ylim([-2.0,2.0])
+  axes.set_xlim([-0.5,35])
   plt.grid(b=True, which='major', axis='both')
   plt.plot(c1Data[-2][windowLength:-windowLength:], np.convolve(c1Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'x',markersize=markersize, label=str(c1Temp)+str(' deg C'))
   plt.plot(c2Data[-2][windowLength:-windowLength:], np.convolve(c2Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'o',markersize=markersize, label=str(c2Temp)+str(' deg C'))
   plt.plot(c3Data[-2][windowLength:-windowLength:], np.convolve(c3Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'v',markersize=markersize, label=str(c3Temp)+str(' deg C'))
-  #plt.plot(c4Data[-2][windowLength:-windowLength:], np.convolve(c4Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 's',markersize=markersize, label=c4Temp)
-  #plt.plot(c6Data[-2][windowLength:-windowLength:], np.convolve(c6Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], '*',markersize=markersize, label=c6Temp)
+  #plt.plot(c4Data[-2][windowLength:-windowLength:], np.convolve(c4Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 's',markersize=markersize, label=str(c4Temp)+str(' deg C'))
+  #plt.plot(c6Data[-2][windowLength:-windowLength:], np.convolve(c6Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], '*',markersize=markersize, label=str(c6Temp)+str(' deg C'))
   plt.legend(loc='best')
-  plt.savefig(outputFile)
+  plt.savefig(outputFile,dpi=200)
   plt.close()
 
 
@@ -141,19 +185,20 @@ def plotRawRO(driverPosition=0, outputFile='rawPlot.png',windowLength=5,markersi
   markersize=9
 
   axes = plt.gca()
-  plt.xlabel("Dose[Mrad(SiO2)", weight='bold',fontsize=12)
+  plt.xlabel("Dose[Mrad(SiO2)]", weight='bold',fontsize=12)
   plt.ylabel("Normalized RO frequency",weight='bold',fontsize=12)
   #axes.set_xlim([xmin,xmax])
-  #axes.set_ylim([97,105])
-  #axes.set_xlim([0,50])
+  #axes.set_ylim([98,105])
+  axes.set_xlim([-0.5,35])
   plt.grid(b=True, which='major', axis='both')
-  plt.plot(rawC1Data[-2][windowLength:-windowLength:], np.convolve(rawC1Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'x',markersize=markersize, label=str(c1Temp)+str(' deg C'))
-  plt.plot(rawC2Data[-2][windowLength:-windowLength:], np.convolve(rawC2Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'o',markersize=markersize, label=str(c2Temp)+str(' deg C'))
-  plt.plot(rawC3Data[-2][windowLength:-windowLength:], np.convolve(rawC3Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'v',markersize=markersize, label=str(c3Temp)+str(' deg C'))
-  #plt.plot(rawC4Data[-2][::], np.convolve(rawC4Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[::], 's',markersize=markersize, label=c4Temp)
-  #plt.plot(rawC6Data[-2][::], np.convolve(rawC6Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[::], '*',markersize=markersize, label=c6Temp)
+  plt.text(3.,99.,'Average chip temperature\n in the legend label',fontsize=12, weight='bold')
+  plt.plot(rawC1Data[-2][windowLength:-windowLength:], np.convolve(rawC1Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'd',markersize=markersize, markerfacecolor='none', label=str(c1Temp)+str(' deg C'))
+  plt.plot(rawC2Data[-2][windowLength:-windowLength:], np.convolve(rawC2Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'o',markersize=markersize, markerfacecolor='none', label=str(c2Temp)+str(' deg C'))
+  plt.plot(rawC3Data[-2][windowLength:-windowLength:], np.convolve(rawC3Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'v',markersize=markersize, markerfacecolor='none', label=str(c3Temp)+str(' deg C'))
+  #plt.plot(rawC4Data[-2][windowLength:-windowLength:], np.convolve(rawC4Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'v',markersize=markersize, label=str(c4Temp)+str(' deg C'))
+  #plt.plot(rawC6Data[-2][windowLength:-windowLength:], np.convolve(rawC6Data[driverPosition],np.ones(windowLength)/windowLength,mode='same')[windowLength:-windowLength:], 'v',markersize=markersize, label=str(c6Temp)+str(' deg C'))
   plt.legend(loc='best')
-  plt.savefig(outputFile)
+  plt.savefig(outputFile,dpi=200)
   plt.close()
 
 
@@ -170,3 +215,8 @@ plotCorrectedRO(0,'clk.png')
 plotCorrectedRO(1,'inv.png')
 plotCorrectedRO(2,'nand.png')
 plotCorrectedRO(3,'nor.png')
+
+
+#plotCorrectedRO(0,'clk0.png')
+
+#plotTempAndTime()

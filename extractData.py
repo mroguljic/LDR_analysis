@@ -59,8 +59,8 @@ def analyzeDirectory(directory,doseTable,outputFile):
 
       f.close()
 
-#analyzeDirectory('Chip1','coldDoses.csv','Chip1.csv')
-#analyzeDirectory('Chip2','coldDoses.csv','Chip2.csv')
-#analyzeDirectory('Chip3','coldDoses.csv','Chip3.csv')
-analyzeDirectory('Chip4','roomTempDoses.csv','Chip4.csv')
-analyzeDirectory('Chip6','roomTempDoses.csv','Chip6.csv')
+analyzeDirectory('LDR1_Vtrim_digital_optimal','coldDoses.csv','Chip1.csv')
+#analyzeDirectory('LDR2_Vtrim_digital_optimal','coldDoses.csv','Chip2.csv')
+#analyzeDirectory('LDR3_Vtrim_digital_optimal','coldDoses.csv','Chip3.csv')
+#analyzeDirectory('LDR4_Vtrim_digital_optimal','roomTempDoses.csv','Chip4.csv')
+#analyzeDirectory('LDR6_Vtrim_digital_optimal','roomTempDoses.csv','Chip6.csv')
