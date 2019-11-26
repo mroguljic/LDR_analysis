@@ -143,14 +143,14 @@ def linearFitCorrected(ROpos,outputFile,title,skipFirstN=400):
     plt.savefig(outputFile,dpi=200)
 
 
-def find10Mrad(data):
+def findXMrad(data,X=10.0):
 
     if(sorted(data) != data):
         print("Data not sorted!")
         return 0
 
     for i,point in enumerate(data):
-        if(point>=10.0):
+        if(point>=X):
             return i
 
 
@@ -175,11 +175,11 @@ def linearFitDelays(ROpos,outputFile,title):
     c6x = c6Data[-2]
     c6y = c6Data[ROpos]
 
-    skipC1 = find10Mrad(c1x)
-    skipC2 = find10Mrad(c2x)
-    skipC3 = find10Mrad(c3x)
-    skipC4 = find10Mrad(c4x)
-    skipC6 = find10Mrad(c6x)
+    skipC1 = findXMrad(c1x)
+    skipC2 = findXMrad(c2x)
+    skipC3 = findXMrad(c3x)
+    skipC4 = findXMrad(c4x)
+    skipC6 = findXMrad(c6x)
 
     c1Temp = round(np.mean(c1Data[-1]))
     c2Temp = round(np.mean(c2Data[-1]))
@@ -249,11 +249,11 @@ def linearFitDelaysRoom(ROpos,outputFile,title):
     c6x = c6Data[-2]
     c6y = c6Data[ROpos]
 
-    skipC1 = find10Mrad(c1x)
-    skipC2 = find10Mrad(c2x)
-    skipC3 = find10Mrad(c3x)
-    skipC4 = find10Mrad(c4x)
-    skipC6 = find10Mrad(c6x)
+    skipC1 = findXMrad(c1x)
+    skipC2 = findXMrad(c2x)
+    skipC3 = findXMrad(c3x)
+    skipC4 = findXMrad(c4x,30.)
+    skipC6 = findXMrad(c6x,30.)
 
     c1Temp = round(np.mean(c1Data[-1]))
     c2Temp = round(np.mean(c2Data[-1]))
